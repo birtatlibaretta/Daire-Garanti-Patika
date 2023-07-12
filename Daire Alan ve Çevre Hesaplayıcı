@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DaireAlanCevreHesaplama {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Yarıçap Giriniz
+        float yarıcap = scanner.nextFloat();
+
+        // Daire Alan Hesaplar
+        float pi = 3.14f;
+        float alan = pi * yarıcap * yarıcap;
+
+        // Daire Çevresini Hesaplar
+        float cevre = 2 * pi * yarıcap;
+
+        // Dairenin Alanını ve Çevresini Yazdırır
+        System.out.println("Dairenin Alanı: " + alan);
+        System.out.println("Dairenin Cevresi: " + cevre);
+    }
+}
